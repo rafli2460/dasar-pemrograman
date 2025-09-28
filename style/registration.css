@@ -1,113 +1,92 @@
 .registration-box {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    width: 100%;
-    max-width: 350px;
-    align-items: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 350px;
 }
 
 .registration-box h2 {
-    text-align: center;
-    margin-bottom: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
 }
 
 .registration-box label {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-.textarea-group > textarea {
-    width: 100%;
-    border-radius: 10px;
-    min-height: 80px;
-    resize: vertical;
-    background: #fdfdfd;
-    border: 1px solid #bbb;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.4;
-    color: #333;
+/* Input group */
+.input-group,
+.textarea-group,
+.radio-group,
+.select-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  width: 100%;
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    margin: 20px 0;
+  gap: 10px;
 }
 
-.input-group input {
-    width: 100%;
-    max-width: 400px;    
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    box-sizing: border-box;
-}
-
-.textarea-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.radio-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;     
-  margin: 20px 0;
+.input-group input,
+.select-group select,
+.textarea-group textarea {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
   font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-.radio-group .gender {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-weight: normal;
-    font-size: 14px;
-    cursor: pointer;
+/* Textarea specific */
+.textarea-group textarea {
+  min-height: 80px;
+  resize: vertical;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.4;
+  color: #333;
+  background: #fdfdfd;
+  border-radius: 6px;
 }
 
+/* Radio buttons */
+.radio-group .gender,
 .radio-group .favorite-sport {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    font-weight: normal;
-    font-size: 14px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 14px;
 }
 
-.radio-group .gender .favorite-sport  label {
+.radio-group label {
+  font-weight: normal;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 5px;
-  font-weight: bold;
 }
 
-.select-group select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-}
-
+/* Button */
 .registration-box button {
   width: 100%;
-  padding: 10px;
+  padding: 12px;
   background-color: #4f46e5;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
   transition: background 0.2s ease;
 }
 
@@ -115,9 +94,10 @@
   background-color: #4338ca;
 }
 
+/* Responsive */
 @media (max-width: 480px) {
   .registration-box {
     padding: 1.5rem;
-    max-width: 90%;
+    max-width: 95%;
   }
 }
