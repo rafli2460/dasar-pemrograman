@@ -45,6 +45,27 @@
   align-items: center;
   margin: 15px 0;
   width: 100%;
+  margin-bottom: 20px
+}
+
+.select-group,
+::picker(select-group) {
+  appearance: base-select;
+  overflow: hidden;
+  display: block;
+  margin: 0px 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.select-group>option{
+  border: none;
+  background: #e8e8ee;
+  margin: .4rem 0;
+}
+
+option:checked {
+  background: #c7c7c7;
 }
 
 .input-group {
@@ -55,7 +76,7 @@
 .select-group select,
 .textarea-group textarea {
   width: 100%;
-  max-width: 320px;
+  /* max-width: 320px; */
   padding: 10px;
   font-size: 1rem;
   border: 1px solid var(--color-border);
