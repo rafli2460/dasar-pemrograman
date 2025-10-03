@@ -1,59 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Page</title>
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/task3.css">
-</head>
+    <link rel="stylesheet" href="../style/main.css" />
+    <link rel="stylesheet" href="../style/task3.css" />
+  </head>
 
-<body>
+  <body>
     <div class="registration-box">
-        <h2>Register</h2>
-        <form>
-            <div class="input-group">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="password" placeholder="Password" required>
-            </div>
+      <h2>Register</h2>
+      <form action="tugas" method="post">
+        <div class="input-group">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            id="firstName"
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            id="firstName"
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="password"
+            id="password"
+          />
+        </div>
 
-            <label for="address">Address</label>
-            <div class="textarea-group">
-                <textarea id="address" placeholder="Enter your address..." required></textarea>
-            </div>
+        <label for="address">Address</label>
+        <div class="textarea-group">
+          <textarea
+            name="address"
+            placeholder="Enter your address..."
+            id="address"
+          ></textarea>
+        </div>
 
-            <label>Favorite Sport</label>
-            <div class="radio-group">
-                <div class="favorite-sport">
-                    <input type="radio" name="fav-sport" value="football">Sepak Bola
-                    <input type="radio" name="fav-sport" value="badminton">Bulu Tangkis
-                    <input type="radio" name="fav-sport" value="tennis">Tennis
-                </div>
-            </div>
+        <label for="favoriteSport">Favorite Sport</label>
+        <div class="radio-group">
+          <div class="favorite-sport">
+            <input
+              type="radio"
+              name="fav-sport"
+              id="football"
+              value="football"
+            />
+            Sepak Bola
+            <input
+              type="radio"
+              name="fav-sport"
+              id="badminton"
+              value="badminton"
+            />
+            Bulu Tangkis
+            <input type="radio" name="fav-sport" id="tennis" value="tennis" />
+            Tennis
+          </div>
+        </div>
 
-            <label>Gender</label>
-            <div class="radio-group">
-                <div class="gender">
-                    <input type="radio" name="gender" value="male" required>Male
-                    <input type="radio" name="gender" value="female">Female
-                </div>
-            </div>
+        <label for="gender">Gender</label>
+        <div class="radio-group">
+          <div class="gender">
+            <input type="radio" name="gender" id="Male" value="Male" /> Male
+            <input type="radio" name="gender" id="Female" value="Female" />
+            Female
+          </div>
+        </div>
 
-            <label for="Sport">Sport</label>
-            <div class="select-group">
-                <select id="country" required>
-                    <option value="">Select your Sport</option>
-                    <option value="tennis">Tennis</option>
-                    <option value="golf">Golf</option>
-                    <option value="padel">Padel</option>
-                    <option value="running">running</option>
-                </select>
-            </div>
-            <button type="submit">Register</button>
-        </form>
+        <label for="Sport">Sport</label>
+        <div class="select-group">
+          <select name="country" id="country">
+            <option value="">Select your Sport</option>
+            <option value="tennis">Tennis</option>
+            <option value="golf">Gold</option>
+            <option value="padel">Padel</option>
+            <option value="running">Running</option>
+          </select>
+        </div>
+        <button type="reset" id="resetBtn">Reset</button>
+        <button type="submit" id="registerBtn">Register</button>
+      </form>
     </div>
-</body>
-
+    <script src="../js/registration.js"></script>
+  </body>
 </html>

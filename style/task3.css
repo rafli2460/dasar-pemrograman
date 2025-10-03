@@ -9,7 +9,7 @@
   --color-border: #ccc;
 
   --radius: 8px;
-  --shadow: 0 4px 20px rgba(0,0,0,0.15);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Box container */
@@ -45,7 +45,7 @@
   align-items: center;
   margin: 15px 0;
   width: 100%;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
 .select-group,
@@ -58,10 +58,10 @@
   margin-bottom: 20px;
 }
 
-.select-group>option{
+.select-group > option {
   border: none;
   background: #e8e8ee;
-  margin: .4rem 0;
+  margin: 0.4rem 0;
 }
 
 option:checked {
@@ -126,6 +126,7 @@ option:checked {
   font-weight: bold;
   transition: background 0.2s ease;
   font-family: var(--font-family);
+  margin-bottom: 10px;
 }
 
 .registration-box button:hover {
