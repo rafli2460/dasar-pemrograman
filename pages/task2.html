@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kota di Indonesia</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/task3.css">
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kota di Indonesia</h1>
+    </header>
+
+    <main>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showArticle('jakarta')">Jakarta</a></li>
+                    <li><a href="#" onclick="showArticle('depok')">Depok</a></li>
+                    <li><a href="#" onclick="showArticle('surabaya')">Surabaya</a></li>
+                </ul>
+            </nav>
+
+            <div id="articles">
+                <article id="jakarta" class="active">
+                    <div class="content">
+                        <div class="text">
+                            <h2>Jakarta</h2>
+                            <p>Ibu Kota Jakarta merupakan suatu wilayah yang padat penduduk dan menjadi pusat
+                                pemeritahan republik Indonesia</p>
+                            <p>DKI Jakarta mempunyai banyak tempat rekreasi seperti pulau seribu, taman impian jaya
+                                ancol, dan juga beberapa pulau yang ada disekitar teluk jakarta</p>
+                        </div>
+                        <div class="image">
+                            <img src="../assets/jakarta.jpg" alt="Jakarta" />
+                        </div>
+                    </div>
+                </article>
+
+                <article id="depok">
+                    <div class="content">
+                        <div class="text">
+                            <h2>Depok</h2>
+                            <p>Kota Depok adalah sebuah kota yang terletak di Provinsi Jawa Barat, Indonesia. Kota Depok
+                                merupakan bagian dari kawasan metropolitan Jabodetabekpunjur dan berada di 30,6 km arah
+                                selatan dari DKI Jakarta</p>
+                            <p>Kota Depok dibentuk dari wilayah Kota Administratif Depok dengan penambahan wilayah dari
+                                Kecamatan Limo, Kecamatan Cimanggis, dan Kecamatan Sawangan, serta sebagian desa dari
+                                Kecamatan Bojonggede yang digabungkan dengan Kecamatan Pancoran Mas. Tanggal
+                                peresmian Kota Depok ditetapkan sebagai Hari Jadi Kota Depok</p>
+                        </div>
+                        <div class="image">
+                            <img src="../assets/depok.jpg" alt="Depok" />
+                        </div>
+                    </div>
+                </article>
+
+                <article id="surabaya">
+                    <div class="content">
+                        <div class="text">
+                            <h2>Surabaya</h2>
+                            <p>Kota Surabaya pelafalan dalam bahasa Indonesia:
+                                adalah ibu kota Provinsi Jawa Timur yang menjadi pusat pemerintahan dan
+                                perekonomian sekaligus kota terbesar di provinsi tersebut. Surabaya juga merupakan
+                                sebuah kota yang terletak di Provinsi Jawa Timur, Indonesia Surabaya merupakan kota
+                                terbesar kedua di Indonesia setelah Jakarta. </p>
+                        </div>
+                        <div class="image">
+                            <img src="../assets/surabaya.jpg" alt="Surabaya" />
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Muhammad Rafli</p>
+    </footer>
+</body>
+<script>
+    function showArticle(id) {
+        document.querySelectorAll("article").forEach(el => el.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccff33;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.header {
+    background-color: #ffcc33; /* kuning-oranye */
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: purple;
+}
+
+.title {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px;
+}
+ .domain {
+    font-size: 20px;
+    color: green;
+    letter-spacing: 8px;
+    margin: 15px 0;
+}
+
+.content {
+    font-size: 16px;
+    margin: 10px auto;
+    width: 70%;
+    text-align: justify;
+}
+
+.link {
+    margin-top: 20px;
+}
+
+.link a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
