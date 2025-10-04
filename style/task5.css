@@ -95,7 +95,7 @@ h1 {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  color: #fff;
+  color: #0a0202;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -109,8 +109,4 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: 0.2s ease;
-}
-
-button:hover {
-  background: #357edd;
 }
