@@ -1,14 +1,18 @@
+/* The line `document.addEventListener('DOMContentLoaded', () => {` is adding an event listener to the
+`DOMContentLoaded` event of the `document` object. This event is fired when the initial HTML
+document has been completely loaded and parsed, without waiting for stylesheets, images, and
+subframes to finish loading. */
 document.addEventListener('DOMContentLoaded', () => {
 
     const body = document.body;
-    const handle = document.querySelector(".handle");
-    const rotator = document.querySelector(".rotator");
-    const angleDisplay = document.querySelector(".angle-display");
+    const handle = document.getElementById("handle");
+    const rotator = document.getElementById("rotator");
+    const angleDisplay = document.getElementById("angleDisplay");
     
-    const currentBaseDisplay = document.querySelector("#currentBase");
-    const currentGradientDisplay = document.querySelector("#currentGradient");
-    const currentAngleDisplay = document.querySelector("#currentAngle");
-    const applyBtn = document.querySelector("#applyBtn");
+    const currentBaseDisplay = document.getElementById("currentBase");
+    const currentGradientDisplay = document.getElementById("currentGradient");
+    const currentAngleDisplay = document.getElementById("currentAngle");
+    const applyBtn = document.getElementById("applyBtn");
 
     let confirmedSettings = {
         angle: 0,
