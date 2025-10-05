@@ -105,6 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
         handle.style.cursor = "grab";
     });
 
+/* The `document.addEventListener("mousemove", (e) => { ... })` code snippet is adding an event
+listener to the `document` object for the `mousemove` event. This event listener function is
+triggered whenever the mouse cursor moves on the document. */
     document.addEventListener("mousemove", (e) => {
         if (!dragging) return;
         const rect = rotator.getBoundingClientRect();
@@ -112,7 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
   
         previewSettings.angle = angle;
-        rotator.style.transform = `rotate(${angle}deg)`; 
+        rotator.style.transform = `rotate(${angle}deg)`;
+        angleDisplay.style.transform = `translate(-50%, -50%) rotate(${-angle}deg)`;
         updatePreview(previewSettings);
     });
 
