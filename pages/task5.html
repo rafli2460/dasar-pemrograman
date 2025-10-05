@@ -2,73 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan Javascript</title>
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/task5.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Latihan Javascript</title>
+        <link rel="stylesheet" href="../style/main.css">
+        <link rel="stylesheet" href="../style/task5.css">
 </head>
 
 <body>
-
-
-    <div class="container">
-        <h1>Change Base and Gradient for Background</h1>
-        <div class="status-panel">
-            <div class="current-settings">
-                <strong>Current Settings: </strong>
-                Base: <span id="currentBase">red</span>
-                Gradient: <span id="currentGradient">blue</span>
-                Angle: <span id="currentAngle">0°</span>
-            </div>
-            <div class="actions-buttons">
-                <button id="applyBtn">Apply Changes</button>
-            </div>
-        </div>
-        <div class="settings">
-            <div class="base-group">
-                <h3>Base</h3>
-                <label for="baseRed"><input type="radio" name="baseColor" class="baseInput" id="baseRed" value="red"
-                        checked>Red</label>
-                <label for="baseBlue"><input type="radio" name="baseColor" class="baseInput" id="baseBlue"
-                        value="blue">Blue</label>
-                <label for="baseYellow"><input type="radio" name="baseColor" class="baseInput" id="baseYellow"
-                        value="yellow">Yellow</label>
-                <label for="baseGreen"><input type="radio" name="baseColor" class="baseInput" id="baseGreen"
-                        value="green">Green</label>
-                <label for="baseCyan"><input type="radio" name="baseColor" class="baseInput" id="baseCyan"
-                        value="cyan">Cyan</label>
-                <label for="baseWhite"><input type="radio" name="baseColor" class="baseInput" id="baseWhite"
-                        value="white">White</label>
-            </div>
-
-            <div class="gradient-group">
-                <h3>Gradient</h3>
-                <label for="gradRed"><input type="radio" name="gradientColor" class="gradientInput" id="gradRed"
-                        value="red">Red</label>
-                <label for="gradBlue"><input type="radio" name="gradientColor" class="gradientInput" id="gradBlue"
-                        value="blue" checked>Blue</label>
-                <label for="gradYellow"><input type="radio" name="gradientColor" class="gradientInput" id="gradYellow"
-                        value="yellow">Yellow</label>
-                <label for="gradGreen"><input type="radio" name="gradientColor" class="gradientInput" id="gradGreen"
-                        value="green">Green</label>
-                <label for="gradCyan"><input type="radio" name="gradientColor" class="gradientInput" id="gradCyan"
-                        value="cyan">Cyan</label>
-                <label for="gradWhite"><input type="radio" name="gradientColor" class="gradientInput" id="gradWhite"
-                        value="white">White</label>
-            </div>
-
-            <div class="angle-group">
-                <h3>Angle</h3>
-                <div class="rotator" id="rotator">
-                    <div class="handle" id="handle"></div>
-                    <div class="angle-display" id="angleDisplay">0°</div>
+        <div class="container">
+                <h1>Change Base and Gradient for Background</h1>
+                <div class="status-panel">
+                        <div class="current-settings-header">
+                                <strong>Current Settings</strong>
+                        </div>
+                        <div class="current-settings-grid">
+                                <div class="setting-item">
+                                        <span class="setting-label">Base</span>
+                                        <span id="currentBase" class="setting-value">red</span>
+                                </div>
+                                <div class="setting-item">
+                                        <span class="setting-label">Gradient</span>
+                                        <span id="currentGradient" class="setting-value">blue</span>
+                                </div>
+                                <div class="setting-item">
+                                        <span class="setting-label">Angle</span>
+                                        <span id="currentAngle" class="setting-value">0°</span>
+                                </div>
+                        </div>
+                        <div class="actions-buttons">
+                                <button id="applyBtn">Apply Changes</button>
+                        </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="settings">
+                        <div class="base-group">
+                                <h3>Base</h3>
+                                <label for="baseRed"><input type="radio" name="baseColor" class="baseInput" id="baseRed"
+                                                value="red" checked>Red</label>
+                                <label for="baseBlue"><input type="radio" name="baseColor" class="baseInput"
+                                                id="baseBlue" value="blue">Blue</label>
+                                <label for="baseYellow"><input type="radio" name="baseColor" class="baseInput"
+                                                id="baseYellow" value="yellow">Yellow</label>
+                                <label for="baseGreen"><input type="radio" name="baseColor" class="baseInput"
+                                                id="baseGreen" value="green">Green</label>
+                                <label for="baseCyan"><input type="radio" name="baseColor" class="baseInput"
+                                                id="baseCyan" value="cyan">Cyan</label>
+                                <label for="baseWhite"><input type="radio" name="baseColor" class="baseInput"
+                                                id="baseWhite" value="white">White</label>
+                        </div>
 
-    <script src="../js/task5.js"></script>
+                        <div class="gradient-group">
+                                <h3>Gradient</h3>
+                                <label for="gradRed"><input type="radio" name="gradientColor" class="gradientInput"
+                                                id="gradRed" value="red">Red</label>
+                                <label for="gradBlue"><input type="radio" name="gradientColor" class="gradientInput"
+                                                id="gradBlue" value="blue" checked>Blue</label>
+                                <label for="gradYellow"><input type="radio" name="gradientColor" class="gradientInput"
+                                                id="gradYellow" value="yellow">Yellow</label>
+                                <label for="gradGreen"><input type="radio" name="gradientColor" class="gradientInput"
+                                                id="gradGreen" value="green">Green</label>
+                                <label for="gradCyan"><input type="radio" name="gradientColor" class="gradientInput"
+                                                id="gradCyan" value="cyan">Cyan</label>
+                                <label for="gradWhite"><input type="radio" name="gradientColor" class="gradientInput"
+                                                id="gradWhite" value="white">White</label>
+                        </div>
+
+                        <div class="angle-group">
+                                <h3>Angle</h3>
+                                <div class="rotator" id="rotator">
+                                        <div class="handle" id="handle"></div>
+                                        <div class="angle-display" id="angleDisplay">0°</div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+        <script src="../js/task5.js"></script>
 
 </body>
 
