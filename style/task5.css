@@ -7,9 +7,11 @@
   max-width: 400px;
   width: 100%;
 }
+
 h1 {
   margin-bottom: 2rem;
 }
+
 .settings {
   display: flex;
   flex-direction: column;
@@ -27,19 +29,40 @@ h1 {
     text-shadow: 1px 1px 2px black;
 }
 
-.current-settings {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+.current-settings-header {
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.current-settings span {
+.current-settings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.setting-item {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.setting-label {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-bottom: 0.25rem;
+}
+
+.setting-value {
+    font-size: 1.1rem;
     font-weight: bold;
-    display: inline-block;
-    padding: 2px 8px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.2rem 0;
     border-radius: 4px;
 }
-
 
 .action-buttons button {
     padding: 10px 20px;
