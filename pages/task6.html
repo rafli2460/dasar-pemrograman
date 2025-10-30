@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6 Pemrograman web</title>
+  </head>
+  <body>
+    <textarea name="input-nama" id="input-nama"></textarea><br />
+    <button
+      type="button"
+      onclick="confirmAction()"
+    >
+      Click Me
+    </button>
+    <button type="button" onclick="createHeader()">Create Header</button>
+  </body>
+  <script>
+    function createHeader() {
+      const headerText = prompt("Enter the header text:");
+      if (headerText) {
+        const header = document.createElement("h1");
+        header.textContent = headerText;
+        document.body.appendChild(header);
+      }
+    }
+
+    function confirmAction() {
+      if (confirm("Are you sure to click me?")) {
+        var nama = document.getElementById("input-nama").value;
+        alertButton(nama);
+      } else {
+        document.getElementById("input-nama").value = "";
+      }
+    }
+
+    function alertButton(nama) {
+      alert("Hallo " + nama);
+    }
+  </script>
+</html>
