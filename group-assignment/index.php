@@ -32,6 +32,10 @@
     </div>
 
     <script>
+/**
+ * The function `openForm` is used to switch between different form containers by hiding all other
+ * containers and updating the active tab link.
+ */
         function openForm(evt, formName) {
             var i, formContainer, tabLinks;
             formContainer = document.getElementsByClassName("form-container");
