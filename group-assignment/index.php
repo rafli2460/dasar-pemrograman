@@ -15,6 +15,11 @@
     <div id="login" class="form-container active">
         <h2>Login</h2>
         <form action="login.php" method="post">
+            <?php
+            if (isset($_GET['error'])) {
+                echo '<p style="color: red; text-align: center;">Invalid username or password.</p>';
+            }
+            ?>
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
@@ -49,6 +54,7 @@
             document.getElementById(formName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+        
     </script>
 
 </div>
